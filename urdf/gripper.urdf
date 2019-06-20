@@ -1,0 +1,54 @@
+<robot name="gripper" xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:macro name="gripper_v5" params="parent *origin"> 
+
+<!-- joint between wrist_3_link and base_link_gripper -->
+		<joint name="arm_gripper_joint" type="fixed" >
+			<xacro:insert_block name="origin" />
+			<parent link="${parent}" />
+			<child link="gripper" />
+		</joint>
+
+	 <link
+		  name="gripper">
+		  <inertial>
+		    <origin
+		      xyz="-0.04 -0.145 -0.082"
+		      rpy="0 1.571 0" />
+		    <mass
+		      value="0.062951" />
+		    <inertia
+		      ixx="0"
+		      ixy="0"
+		      ixz="0"
+		      iyy="0"
+		      iyz="0"
+		      izz="0" />
+		  </inertial>
+		  <visual>
+		    <origin
+		      xyz="-0.04 -0.145 0.075"
+		      rpy="0 1.571 0" />
+		    <geometry>
+		      <mesh
+		        filename="package://ur3_ros_assignment_2/meshes/GRIPPER.STL"
+						scale="0.001 0.001 0.001" />
+		    </geometry>
+		    <material
+		      name="">
+		      <color
+		        rgba="0.79216 0.81961 0.93333 1" />
+		    </material>
+		  </visual>
+		  <collision>
+		    <origin
+		      xyz="-0.04 -0.145 -0.082"
+		      rpy="0 1.571 0" />
+		    <geometry>
+		      <mesh
+		        filename="package://ur3_ros_assignment_2/meshes/GRIPPER.STL" 
+						scale="0.001 0.001 0.001" />
+		    </geometry>
+		  </collision>
+		</link>
+	</xacro:macro>
+</robot>
