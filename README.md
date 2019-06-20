@@ -18,7 +18,6 @@ cd catkin_ws/src
 git clone https://github.com/ros-industrial/ur_modern_driver.git
 catkin_make
 sudo apt-get install ros-kinetic-ur-*
-
 ```
 
 This will give you the ability to run your program on a real Universal robot (UR3, UR5, UR10).
