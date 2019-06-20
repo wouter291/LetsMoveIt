@@ -51,25 +51,11 @@ To test if your package is installed correctly run:
 
 ```
 roslaunch ur_modern_driver ur5_bringup.launch
-rosrun LetsMoveIt statemachine.py
+rosrun LetsMoveIt StateMachine.py
 ```
 
 If this runs without errors, the package is installed correctly.
 
-## Using UR simulator
-
-It is also possible to use the simulator of UR. The offline simulator is available [here](https://www.universal-robots.com/download/?option=16594#section16593). We used version 3.4.5-100, this worked for us. After downloading the offline simulator, unpack it in a folder you prefer.
-
-### Test offline simulator
-
-To test the offline simulator, run the following line from the folder where your offline simulator is located.
-
-```
-./ursim-3.4.5-100/start-ursim.sh UR3
-roslaunch suii_description display.launch
-roslaunch ur_modern_driver ur3_suii.launch robot_ip:=localhost
-```
-To check if the Suii and the UR3 models are loaded:
 
 ```
 rosrun rviz rviz
