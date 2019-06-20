@@ -43,4 +43,13 @@ In the testSequence there are different movements described. For example:
   ```
 We've defined a position with the CopyPose script called "Abovelift" you can change these to your own poses made with the CopyPose script to make the robot move to the desired pose. You can also change the speed and acceleration of the robot for eacht movement. **Note** The speed and acceleration are both defined in **radians**.
 
+**Controlling gripper/outputs**
+
+For controlling our gripper we've used two different outputs, closing and opening the gripper(DO0 and DO1).
+You can set the outputs by calling the folowing function:
+
+set_digital_out(n,v)
+
+n = output port
+v = value(0 or 1)
 
