@@ -11,7 +11,7 @@ For this project it is assumed you use Ubuntu 16.04 LTS with ROS Kinetic
 
 What things you need to install the software and how to install them:
 
-You will need the ur_modern_driver package from ThomasTimm. You can intall this package by running the following lines:
+You will need the ur_modern_driver package from ros-industrial. You can intall this package by running the following lines:
 
 ```
 cd catkin_ws/src
@@ -46,12 +46,28 @@ catkin_make
 
 ## Test your installed package
 
+First make sure you have a connection with the robot. To make sure you have a connection do the following:
+
+```
+Connect the Ethernet cable to your PC
+Go to internet settings and select wired connection
+Edit connection
+Change from automatic to manual
+Click on "add"
+Fill in the ip addres with the last number different from the real ip addres 
+  (for example: if the real ip address is "192.168.66.5" fill in "192.168.66.1")
+Fill in the netmask (if not automatically) to "24"
+Fill in the gateway to "255.255.255.0"
+```
+
+
 To test if your package is installed correctly run:
 
 ```
-roslaunch ur_modern_driver ur5_bringup.launch
+roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=[IP_OF_THE_ROBOT]
 rosrun LetsMoveIt StateMachine.py
 ```
+**Be aware, the coordinates in the StateMachine.py are filled in for our purpouse ! Be carefull with running the program before you destroy anything*** 
 
 If this runs without errors, the package is installed correctly.
 
