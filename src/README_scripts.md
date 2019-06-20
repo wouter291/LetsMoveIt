@@ -46,6 +46,7 @@ We've defined a position with the CopyPose script called "Abovelift" you can cha
 **Controlling the gripper outputs**
 
 For controlling our gripper we've used two different outputs, closing and opening the gripper(DO0 and DO1).
+
 **Note** your outputs from your gripper could be different!
 
 You can set the outputs by calling the folowing function:
@@ -53,6 +54,8 @@ You can set the outputs by calling the folowing function:
 set_digital_out(n,v)
 
 Where:
+
 n = output port
+
 v = value(0 or 1)
 
