@@ -61,7 +61,7 @@ Fill in the gateway to "255.255.255.0"
 ```
 
 
-To test if your package is installed correctly run:
+To test if your package is installed correctly run the following lines:
 
 ```
 roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=[IP_OF_THE_ROBOT]
@@ -72,6 +72,7 @@ rosrun LetsMoveIt StateMachine.py
 If this runs without errors, the package is installed correctly.
 
 
+Run the following line to see the virtual robot:
 ```
 rosrun rviz rviz
 ```
