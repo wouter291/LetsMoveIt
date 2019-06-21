@@ -89,6 +89,8 @@ Open the StateMachine.py, from the src folder, in an editor of choice and run th
 
 **Be aware, the coordinates in the StateMachine.py are filled in for our purpouse ! Be carefull with running the program before you destroy anything*** 
 
+
+
 If this runs without errors, the package is installed correctly.
 
 
