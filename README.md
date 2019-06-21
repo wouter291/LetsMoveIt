@@ -89,7 +89,7 @@ Open the StateMachine.py, from the src folder, in an editor of choice and run th
 
 **Be aware, the coordinates in the StateMachine.py are filled in for our purpouse ! Be carefull with running the program before you destroy anything*** 
 
-
+See [README_scripts.md](https://github.com/wouter291/LetsMoveIt/blob/master/src/README_scripts.md) how to make your own poses.
 
 If this runs without errors, the package is installed correctly.
 
