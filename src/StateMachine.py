@@ -32,8 +32,6 @@ class StateMachine (object):
         set_digital_out(1,0) #close gripper
 
        
-
-
     def getToolVelocity(self, msg):
         self.xVel = msg.twist.linear.x
         self.yVel = msg.twist.linear.y
@@ -42,6 +40,7 @@ class StateMachine (object):
         self.ryVel = msg.twist.angular.y
         self.rzVel = msg.twist.angular.z
 
+   
     def callback(self, data):
         for i in range(0,10):
             del self.Digital_Out_States[i]
@@ -74,6 +73,7 @@ class StateMachine (object):
         #print wanted_pose
         return wanted_pose
 
+    
     def buildMove(self, moveType, pose):
         # acceleration = 1  #Joint acceleration in rad/s^2
         # speed = 0.8 #Joint speed in rad/s
@@ -86,11 +86,13 @@ class StateMachine (object):
         #print sendable
         return sendable
 
+    
     def sendMove(self, string):
         st = String()        
         st.data = string
         self.pub.publish(st)
 
+        
     def testSequence(self):
         try:
             # #Starting the robot
@@ -184,8 +186,6 @@ class StateMachine (object):
                 self.acceleration = 1
                 self.sendMove(self.buildMove('j',self.getPos('Abovelift')))
                 excecute.waitForPosition()
-
-
 
 
         except rospy.ROSInternalException:
