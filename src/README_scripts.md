@@ -13,7 +13,7 @@ To do this, follow the next steps:
 ```
 Go to CopyPose.py
 In the class CopyPose go to def __init__(self):
-Change the directory in the following line: self.adr = '/home/ubuntu/catkin_ws/src/ur_script_control/yaml/poses.yaml' to your own directory.
+Change the directory in the following line: self.adr = '/home/ubuntu/catkin_ws/src/LetsMoveIt/yaml/poses.yaml' to your own directory.
 ```
 
 Try making your own poses by putting the robot in the desired position and running the code. 
@@ -30,7 +30,7 @@ To do this, follow the next steps:
 ```
 Go to StateMachine.py
 In the class StateMachine go to def __init__(self):
-Change the directory in the following line: self.adr = '/home/ubuntu/catkin_ws/src/ur_script_control/yaml/poses.yaml' to your own directory.
+Change the directory in the following line: self.adr = '/home/ubuntu/catkin_ws/src/LetsMoveIt/yaml/poses.yaml' to your own directory.
 ```
 
 In the testSequence there are different movements described. For example:
