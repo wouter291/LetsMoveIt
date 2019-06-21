@@ -16,7 +16,7 @@ class StateMachine (object):
         rospy.init_node('StateMachineNode', anonymous=True)
         self.pub = rospy.Publisher('/ur_driver/URScript', String, queue_size=10, latch=True)
     
-        self.addr = '/home/ubuntu/catkin_ws/src/ur_script_control/yaml/poses.yaml'
+        self.addr = '/home/ubuntu/catkin_ws/src/LetsMoveIt/yaml/poses.yaml'
         rospy.Subscriber("tool_velocity", TwistStamped, self.getToolVelocity)
 
         set_states()
