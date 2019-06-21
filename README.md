@@ -20,7 +20,7 @@ For this project it is assumed you have
 
 ###### What things do you need to install for the software to work and how to install them:
 
-First you will need the ur_modern_driver package from ros-industrial. You can install this package by running the following commands:
+First you will need the _ur_modern_driver_ package from _ros-industrial_. You can install this package by running the following commands:
 
 ```
 cd catkin_ws/src
@@ -37,7 +37,7 @@ This will give you the ability to run your program on a real Universal robot (UR
 
 
 
-The next thing you will need to install is the universal_robot package. You can install this package by running the following commands:
+The next thing you will need to install is the _universal_robot_ package. You can install this package by running the following commands:
 
 ```
 cd catkin_ws/src
@@ -50,7 +50,7 @@ catkin_make
 
 
 ## Installing the Let's Move It package
-To install the Let's Move It package in your catkin workspace, you will need to run the following commands:
+To install the _Let's Move It package_ in your catkin workspace, you will need to run the following commands:
 
 ```
 cd catkin_ws/src
