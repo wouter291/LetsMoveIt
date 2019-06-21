@@ -83,8 +83,10 @@ To test if your package is installed correctly run the following lines:
 
 ```
 roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=[IP_OF_THE_ROBOT]
-rosrun LetsMoveIt StateMachine.py
 ```
+
+Open the StateMachine.py, from the src folder, in an editor of choice and run the code.
+
 **Be aware, the coordinates in the StateMachine.py are filled in for our purpouse ! Be carefull with running the program before you destroy anything*** 
 
 If this runs without errors, the package is installed correctly.
