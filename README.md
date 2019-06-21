@@ -57,6 +57,7 @@ cd catkin_ws/src
 git clone https://github.com/wouter291/LetsMoveIt.git
 cd catkin_ws
 catkin_make
+source catkin_ws/devel/setup.bash
 ```
 
 ## Test your installed package
