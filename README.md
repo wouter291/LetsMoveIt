@@ -46,7 +46,7 @@ cd catkin_ws
 catkin_make
 ```
 
-**NOTE** that you need to change the *universal_robot/ur_driver/src/ur_driver/io_interface.py*to the *io_interface.py* that is in the src folder uploaded to this github. Copy it and paste it in your catkin_ws/src/universal_robot/ur_driver/src/ur_driver. Don't forget to delete the old one.
+**NOTE:** You need to change the *universal_robot/ur_driver/src/ur_driver/io_interface.py* with the *io_interface.py* that is in the src folder uploaded to this github. Copy it and paste it in your catkin_ws/src/universal_robot/ur_driver/src/ur_driver. Don't forget to delete the old one.
 
 
 ## Installing the Let's Move It package
