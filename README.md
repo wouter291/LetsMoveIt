@@ -24,7 +24,7 @@ First you will need the _ur_modern_driver_ package from _ros-industrial_. You ca
 
 ```
 cd catkin_ws/src
-git clone https://github.com/ros-industrial/ur_modern_driver.git
+git clone -b kinetic-devel https://github.com/ros-industrial/ur_modern_driver.git
 cd catkin_ws
 catkin_make
 ```
