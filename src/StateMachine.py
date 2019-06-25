@@ -48,12 +48,6 @@ class StateMachine (object):
         for i in range(0,10):
             del self.Digital_In_States[i]
             self.Digital_In_States.insert(i, data.digital_in_states[i].state)
-        for i in range(0,2):
-            del self.Analog_Out_States[i]
-            self.Analog_Out_States.insert(i, data.analog_out_states[i].state)
-        for i in range(0,2):
-            del self.Analog_In_States[i]
-            self.Analog_In_States.insert(i, data.analog_in_states[i].state)
 
     
     def waitForPosition(self):
